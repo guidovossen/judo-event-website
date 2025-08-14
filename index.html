@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Workshop IJzeren Hans — 21 september 2025</title>
+  <meta name="description" content="Workshop waarin verhalen, judo en ademwerk samenkomen — zondag 21 september 2025, 15:00–18:00. Meld je aan!" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Workshop IJzeren Hans" />
+  <meta property="og:description" content="Verhalen, judo en ademwerk — zo 21 september 2025, 15:00–18:00." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jouw-domein.example" />
+  <meta property="og:image" content="https://jouw-domein.example/cover.jpg" />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root {
+      --bg: #0b1020; --card: #121a33; --accent: #7dd3fc; --text: #e5e7eb; --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text); 
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(125, 211, 252, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(125, 211, 252, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(59, 130, 246, 0.02) 0%, transparent 50%),
+        linear-gradient(135deg, rgba(17, 25, 54, 0.8) 0%, rgba(11, 16, 32, 0.9) 100%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M30 30c0-16.569 13.431-30 30-30v60c-16.569 0-30-13.431-30-30zM0 30c0-16.569 13.431-30 30-30v60C13.431 60 0 46.569 0 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-attachment: fixed;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 980px; padding: 24px; margin: 0 auto; }
+    header { display: grid; gap: 16px; align-items: center; justify-items: center; padding: 64px 16px 24px; text-align: center; }
+    .badge { display: inline-block; padding: 6px 10px; border: 1px solid #2b3a67; border-radius: 999px; color: var(--accent); background: rgba(125,211,252,.08); }
+    h1 { font-size: clamp(2.2rem, 3vw + 1rem, 3.2rem); margin: 8px 0 0; line-height: 1.1; }
+    .lead { color: var(--muted); font-size: clamp(1rem, .5vw + .9rem, 1.2rem); max-width: 60ch; }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border: 1px solid rgba(148,163,184,.15); border-radius: 18px; padding: 24px; backdrop-filter: blur(6px); box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .kpi { display: flex; gap: 12px; align-items: center; }
+    .kpi-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(125,211,252,.12); display: grid; place-items: center; font-weight: 700; color: var(--accent); }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+    .btn { appearance: none; border: 0; border-radius: 14px; padding: 12px 18px; cursor: pointer; font-weight: 700; letter-spacing: .2px; transition: transform .06s ease, filter .2s ease; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+    .btn-primary { background: var(--accent); color: #0b1020; }
+    .btn-ghost { background: transparent; color: var(--text); border: 1px solid rgba(148,163,184,.3); }
+    .btn:active { transform: translateY(1px); }
+    section { margin: 28px 0; }
+    footer { color: var(--muted); font-size: .9rem; text-align: center; padding: 32px 0 64px; }
+    img.hero { width: 100%; max-height: 420px; object-fit: cover; border-radius: 18px; border: 1px solid rgba(148,163,184,.15); }
+    ul { padding-left: 18px; }
+    a { color: var(--accent); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="badge">Je bent uitgenodigd ✨</span>
+      <h1>Workshop IJzeren Hans: Verhalen, Judo & Ademwerk</h1>
+      <p class="lead">Een bijzondere middag waarin mythologie en praktijk elkaar ontmoeten — wekken van je innerlijke krijgsgeest.</p>
+      <div class="cta">
+        <a class="btn btn-ghost" id="addToCalendar" href="#">Zet in agenda</a>
+      </div>
+    </header>
+
+    <!-- Countdown -->
+    <section class="card" id="countdown" aria-live="polite" style="text-align:center">
+      <h2>Start over</h2>
+      <div class="grid" style="grid-template-columns: repeat(4, 1fr); max-width: 560px; margin: 0 auto;">
+        <div><div class="kpi-icon" style="margin:0 auto;">🗓️</div><div><span id="cd-days" style="font-size:2rem;font-weight:800;display:block">—</span><small>Dagen</small></div></div>
+        <div><div class="kpi-icon" style="margin:0 auto;">⏳</div><div><span id="cd-hours" style="font-size:2rem;font-weight:800;display:block">—</span><small>Uren</small></div></div>
+        <div><div class="kpi-icon" style="margin:0 auto;">🕒</div><div><span id="cd-mins" style="font-size:2rem;font-weight:800;display:block">—</span><small>Minuten</small></div></div>
+        <div><div class="kpi-icon" style="margin:0 auto;">⏱️</div><div><span id="cd-secs" style="font-size:2rem;font-weight:800;display:block">—</span><small>Seconden</small></div></div>
+      </div>
+      <p id="cd-label" class="lead" style="margin-top:8px;color:var(--muted)">Zondag 21 september 2025 • 15:00–18:00 (Europe/Amsterdam)</p>
+    </section>
+
+    <img class="hero" src="cover.jpg" alt="Afbeelding van de workshop IJzeren Hans" />
+
+    <section class="grid">
+      <div class="card">
+        <div class="kpi">
+          <div class="kpi-icon">📅</div>
+          <div>
+            <div><strong>Datum</strong></div>
+            <div>Zondag 21 september 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="kpi">
+          <div class="kpi-icon">⏰</div>
+          <div>
+            <div><strong>Tijd</strong></div>
+            <div>15:00–18:00</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="kpi">
+          <div class="kpi-icon">📍</div>
+          <div>
+            <div><strong>Locatie</strong></div>
+            <div>Locatie n.t.b.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Over de workshop</h2>
+      <p>Op zondag 21 september, van drie tot zes uur ’s middags, nodigen we je uit voor een bijzondere workshop waarin verhalen, judo en ademwerk samenkomen om je innerlijke krijgsgest te wekken. Onder de bekwame leiding van judoleraar Berent Jan Croezen en de blinde acupuncturist Edgar Vossen, duiken we in het verhaal van IJzeren Hans en verweven we mythologie met praktische judotechnieken.</p>
+      <p>Deze workshop is bedoeld voor deelnemers met een gemiddeld tot gevorderd judoniveau. We nodigen je uit om niet alleen je lichaam, maar ook je stem en je adem te gebruiken om de bushido-geest tot leven te brengen. We zorgen voor eten om je energie op peil te houden, zodat je volledig kunt opgaan in deze inspirerende ervaring.</p>
+      <p>In deze meeslepende sessie komen verhalen, judo en ademwerk samen, geïnspireerd door het tijdloze verhaal van IJzeren Hans. Het is een kans om je krijgershart te ontgrendelen en jezelf op een dieper niveau te ontwikkelen. Kortom, een verrijkende middag die je niet wilt missen!</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Bereikbaarheid</h3>
+        <p>De locatie en route-informatie volgen. Voeg hier later het adres toe of een link naar Google Maps.</p>
+        <p><a href="https://maps.google.com/?q=LOCATIE" target="_blank" rel="noopener">Openen in Google Maps</a></p>
+      </div>
+      <div class="card">
+        <h3>Contact</h3>
+        <p>Vragen? Mail ons op <a href="mailto:you@example.com">you@example.com</a> of stuur een bericht via sociale media.</p>
+      </div>
+    </section>
+
+    <!-- Aanmelden -->
+    <section class="card" id="rsvp">
+      <h2>Aanmelden</h2>
+      <p>Reserveer je plek. We sturen updates over de workshop per e‑mail.</p>
+      <form id="rsvpForm" action="WEBHOOK_URL" method="POST">
+        <!-- Honeypot tegen spam -->
+        <label class="sr-only" for="hp">Laat dit veld leeg</label>
+        <input id="hp" name="bot-field" type="text" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;" />
+
+        <div class="grid" style="margin-top: 8px;">
+          <div>
+            <label for="name"><strong>Naam</strong></label><br />
+            <input id="name" name="name" type="text" placeholder="Jan Jansen" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(148,163,184,.3);background:#0f1530;color:var(--text);" />
+          </div>
+          <div>
+            <label for="email"><strong>E‑mail</strong></label><br />
+            <input id="email" name="email" type="email" required placeholder="jan@example.com" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(148,163,184,.3);background:#0f1530;color:var(--text);" />
+          </div>
+        </div>
+        <div style="margin-top:12px;">
+          <label for="notes"><strong>Opmerkingen (optioneel)</strong></label><br />
+          <textarea id="notes" name="notes" rows="3" placeholder="Is er iets dat we moeten weten?" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(148,163,184,.3);background:#0f1530;color:var(--text);"></textarea>
+        </div>
+        <div style="margin-top:12px;">
+          <label><input type="checkbox" id="consent" required /> Ik ga ermee akkoord e‑mails over deze workshop te ontvangen.</label>
+        </div>
+        <div class="cta" style="margin-top:16px;">
+          <button class="btn btn-primary" type="submit">Aanmelden</button>
+          <span id="rsvpStatus" style="color:var(--muted)"></span>
+        </div>
+        <noscript><!-- Zonder JS doet de browser een normale POST en volgt de redirect van je webhookdienst. --></noscript>
+      </form>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Workshop IJzeren Hans • Gemaakt met ♥</p>
+    </footer>
+  </div>
+
+  <script>
+    // Auto-jaar
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Add-to-calendar
+    const event = {
+      title: 'Workshop IJzeren Hans: Verhalen, Judo & Ademwerk',
+      date: '2025-09-21',
+      timeStart: '15:00',
+      timeEnd: '18:00',
+      timezone: 'Europe/Amsterdam',
+      location: 'Locatie n.t.b.',
+      description: 'Workshop waarin verhalen, judo en ademwerk samenkomen; o.l.v. Berent Jan Croezen en Edgar Vossen. Voor gemiddeld tot gevorderd judoniveau.',
+    };
+    function toGoogleCalDate(dateStr, timeStr) {
+      const [y, m, d] = dateStr.split('-').map(Number);
+      const [hh, mm] = timeStr.split(':').map(Number);
+      const dt = new Date(Date.UTC(y, m - 1, d, hh, mm));
+      return dt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+    }
+    document.getElementById('addToCalendar').addEventListener('click', (e) => {
+      e.preventDefault();
+      const start = toGoogleCalDate(event.date, event.timeStart);
+      const end = toGoogleCalDate(event.date, event.timeEnd);
+      const url = new URL('https://calendar.google.com/calendar/u/0/r/eventedit');
+      url.searchParams.set('text', event.title);
+      url.searchParams.set('dates', `${start}/${end}`);
+      url.searchParams.set('location', event.location);
+      url.searchParams.set('ctz', event.timezone);
+      url.searchParams.set('details', event.description);
+      window.open(url.toString(), '_blank', 'noopener');
+    });
+
+    // Countdown naar start (Europe/Amsterdam). In september is NL UTC+2 (CEST).
+    const target = new Date('2025-09-21T15:00:00+02:00');
+    function updateCountdown() {
+      const now = new Date();
+      const diff = target - now;
+      if (diff <= 0) {
+        document.getElementById('cd-days').textContent = '0';
+        document.getElementById('cd-hours').textContent = '0';
+        document.getElementById('cd-mins').textContent = '0';
+        document.getElementById('cd-secs').textContent = '0';
+        document.getElementById('cd-label').textContent = 'De workshop is begonnen!';
+        return;
+      }
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+      document.getElementById('cd-days').textContent = d;
+      document.getElementById('cd-hours').textContent = h;
+      document.getElementById('cd-mins').textContent = m;
+      document.getElementById('cd-secs').textContent = s;
+      setTimeout(updateCountdown, 1000);
+    }
+    updateCountdown();
+  </script>
+</body>
+</html>
