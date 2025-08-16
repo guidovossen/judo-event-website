@@ -120,42 +120,19 @@
       </div>
       <div class="card">
         <h3>Contact</h3>
-        <p>Vragen? Mail ons op <a href="mailto:you@example.com">you@example.com</a> of stuur een bericht via sociale media.</p>
+        <p>Vragen? Mail ons op <a href="mailto:workshopijzerenhans@gmail.com">workshopijzerenhans@gmail.com</a></p>
       </div>
     </section>
 
     <!-- Aanmelden -->
     <section class="card" id="rsvp">
       <h2>Aanmelden</h2>
-      <p>Reserveer je plek. We sturen updates over de workshop per e‑mail.</p>
-      <form id="rsvpForm" action="WEBHOOK_URL" method="POST">
-        <!-- Honeypot tegen spam -->
-        <label class="sr-only" for="hp">Laat dit veld leeg</label>
-        <input id="hp" name="bot-field" type="text" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;" />
-
-        <div class="grid" style="margin-top: 8px;">
-          <div>
-            <label for="name"><strong>Naam</strong></label><br />
-            <input id="name" name="name" type="text" placeholder="Jan Jansen" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(196,164,132,.4);background:#2a1610;color:var(--text);" />
-          </div>
-          <div>
-            <label for="email"><strong>E‑mail</strong></label><br />
-            <input id="email" name="email" type="email" required placeholder="jan@example.com" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(196,164,132,.4);background:#2a1610;color:var(--text);" />
-          </div>
-        </div>
-        <div style="margin-top:12px;">
-          <label for="notes"><strong>Opmerkingen (optioneel)</strong></label><br />
-          <textarea id="notes" name="notes" rows="3" placeholder="Is er iets dat we moeten weten?" style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(196,164,132,.4);background:#2a1610;color:var(--text);"></textarea>
-        </div>
-        <div style="margin-top:12px;">
-          <label><input type="checkbox" id="consent" required /> Ik ga ermee akkoord e‑mails over deze workshop te ontvangen.</label>
-        </div>
-        <div class="cta" style="margin-top:16px;">
-          <button class="btn btn-primary" type="submit">Aanmelden</button>
-          <span id="rsvpStatus" style="color:var(--muted)"></span>
-        </div>
-        <noscript><!-- Zonder JS doet de browser een normale POST en volgt de redirect van je webhookdienst. --></noscript>
-      </form>
+      <p>Interesse in deelname aan deze bijzondere workshop? Stuur ons een e-mail voor meer informatie of om je aan te melden.</p>
+      <p><strong>E-mail:</strong> <a href="mailto:workshopijzerenhans@gmail.com">workshopijzerenhans@gmail.com</a></p>
+      <div class="cta">
+        <a class="btn btn-primary" href="mailto:workshopijzerenhans@gmail.com?subject=Aanmelding Workshop IJzeren Hans&body=Hallo,%0D%0A%0D%0AIk ben geïnteresseerd in de Workshop IJzeren Hans op 21 september 2025.%0D%0A%0D%0AGraag ontvang ik meer informatie over:%0D%0A- Aanmelding%0D%0A- Locatie%0D%0A- Kosten%0D%0A- Wat mee te nemen%0D%0A%0D%0AMijn naam: %0D%0AMijn telefoonnummer: %0D%0A%0D%0AVriendelijke groet">Stuur e-mail</a>
+        <a class="btn btn-ghost" href="mailto:workshopijzerenhans@gmail.com">Vraag stellen</a>
+      </div>
     </section>
 
     <footer>
